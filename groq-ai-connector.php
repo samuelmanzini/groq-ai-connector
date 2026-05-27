@@ -7,7 +7,7 @@
  * Author:      Samuel Costa
  * Author URI:  https://samuel-costa.com
  * License:     GPLv2 or later
- * Text Domain: groq-ai-connector
+ * Text Domain: wp-groq-ai-connector
  * Requires at least: 7.0
  * Requires PHP: 8.1
  * Requires Plugins: ai
@@ -42,7 +42,7 @@ function groq_connector_load(): void {
 			echo '<div class="notice notice-error"><p>';
 			// translators: 1: required WordPress version, 2: current WordPress version.
 			printf(
-				esc_html__( 'Groq AI Connector requires WordPress %1$s or higher. You are running %2$s.', 'groq-ai-connector' ),
+				esc_html__( 'Groq AI Connector requires WordPress %1$s or higher. You are running %2$s.', 'wp-groq-ai-connector' ),
 				esc_html( GROQ_CONNECTOR_MIN_WP ),
 				esc_html( $wp_version )
 			);
@@ -54,7 +54,7 @@ function groq_connector_load(): void {
 	if ( ! class_exists( \WordPress\AiClient\AiClient::class ) ) {
 		add_action( 'admin_notices', static function (): void {
 			echo '<div class="notice notice-error"><p>';
-			esc_html_e( 'Groq AI Connector requires the WordPress AI plugin (ai) to be active.', 'groq-ai-connector' );
+			esc_html_e( 'Groq AI Connector requires the WordPress AI plugin (ai) to be active.', 'wp-groq-ai-connector' );
 			echo '</p></div>';
 		} );
 		return;
