@@ -27,11 +27,11 @@ class GroqProvider extends AbstractApiProvider {
 	protected static function createProviderMetadata(): ProviderMetadata {
 		return new ProviderMetadata(
 			'groq',
-			__( 'Groq', 'wp-groq-ai-connector' ),
+			__( 'Groq', 'groq-ai-connector' ),
 			ProviderTypeEnum::cloud(),
 			'',
 			RequestAuthenticationMethod::apiKey(),
-			__( 'Ultra-fast AI inference with Groq LPU.', 'wp-groq-ai-connector' ),
+			__( 'Ultra-fast AI inference with Groq LPU.', 'groq-ai-connector' ),
 			GROQ_CONNECTOR_DIR . 'assets/icon-256x256.png'
 		);
 	}

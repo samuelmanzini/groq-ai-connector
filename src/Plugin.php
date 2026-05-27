@@ -51,7 +51,7 @@ class Plugin {
 		}
 		$registry->register( 'groq', [
 			'name'        => 'Groq',
-			'description' => __( 'Ultra-fast AI inference with Groq LPU. Run Llama, Mixtral, Gemma and more.', 'wp-groq-ai-connector' ),
+			'description' => __( 'Ultra-fast AI inference with Groq LPU. Run Llama, Mixtral, Gemma and more.', 'groq-ai-connector' ),
 			'logo_url'    => plugin_dir_url( GROQ_CONNECTOR_FILE ) . 'assets/icon-256x256.png',
 			'type'        => 'ai_provider',
 			'authentication' => [

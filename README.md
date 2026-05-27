@@ -7,7 +7,7 @@
 [![License: GPLv2](https://img.shields.io/badge/License-GPLv2-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
 [![Requires WordPress](https://img.shields.io/badge/WordPress-7.0%2B-21759b)](https://wordpress.org)
 [![PHP](https://img.shields.io/badge/PHP-8.1%2B-777bb4)](https://www.php.net)
-[![Stable tag](https://img.shields.io/badge/version-2.1.0-orange)](https://github.com/samuelmanzini/wp-groq-ai-connector/releases)
+[![Stable tag](https://img.shields.io/badge/version-0.2.1-orange)](https://github.com/samuelmanzini/groq-ai-connector/releases)
 
 ---
 
@@ -33,7 +33,7 @@ Groq's LPU (Language Processing Unit) delivers inference speeds significantly fa
 
 ## Installation
 
-1. Download the latest ZIP from the [Releases](https://github.com/samuelmanzini/wp-groq-ai-connector/releases) page.
+1. Download the latest ZIP from the [Releases](https://github.com/samuelmanzini/groq-ai-connector/releases) page.
 2. In WordPress admin, go to **Plugins → Add New → Upload Plugin**.
 3. Upload the ZIP and click **Install Now**, then **Activate**.
 
@@ -113,7 +113,7 @@ Yes. WordPress 7.0 supports multiple configured providers. Groq will be used fir
 
 ## Changelog
 
-### 2.1.0
+### 0.2.1
 - Full integration with the PHP AI Client via `AbstractApiProvider`
 - Added `wpai_preferred_text_models` filter so Groq is used first for text generation
 - Settings page now shows only model selection (API key moved to Connectors Gallery)

@@ -26,8 +26,8 @@ class GroqSettings {
 
 	public function register_page(): void {
 		add_options_page(
-			__( 'Groq AI', 'wp-groq-ai-connector' ),
-			__( 'Groq AI', 'wp-groq-ai-connector' ),
+			__( 'Groq AI', 'groq-ai-connector' ),
+			__( 'Groq AI', 'groq-ai-connector' ),
 			'manage_options',
 			self::PAGE_SLUG,
 			[ $this, 'render' ]
@@ -62,28 +62,28 @@ class GroqSettings {
 		$is_configured  = '' !== (string) get_option( 'connectors_ai_groq_api_key', '' );
 		?>
 		<div class="wrap">
-			<h1><?php esc_html_e( 'Groq AI — Modelo padrão', 'wp-groq-ai-connector' ); ?></h1>
+			<h1><?php esc_html_e( 'Groq AI — Modelo padrão', 'groq-ai-connector' ); ?></h1>
 
 			<?php if ( ! $is_configured ) : ?>
 			<div class="notice notice-warning inline">
 				<p><?php
 				// translators: 1: opening link tag, 2: closing link tag.
 				printf(
-					esc_html__( 'Chave API nao encontrada. Insira sua Groq API Key em %1$sConfiguracoes > Conectores%2$s.', 'wp-groq-ai-connector' ),
+					esc_html__( 'Chave API nao encontrada. Insira sua Groq API Key em %1$sConfiguracoes > Conectores%2$s.', 'groq-ai-connector' ),
 					'<a href="' . esc_url( $connectors_url ) . '">',
 					'</a>'
 				); ?></p>
 			</div>
 			<?php else : ?>
 			<div class="notice notice-success inline">
-				<p><?php esc_html_e( 'Groq API Key configurada.', 'wp-groq-ai-connector' ); ?></p>
+				<p><?php esc_html_e( 'Groq API Key configurada.', 'groq-ai-connector' ); ?></p>
 			</div>
 			<?php endif; ?>
 
 			<p><?php
 			// translators: 1: opening link tag, 2: closing link tag.
 			printf(
-				esc_html__( 'A chave API e gerenciada em %1$sConfiguracoes > Conectores%2$s. Escolha aqui qual modelo Groq o WordPress usara por padrao.', 'wp-groq-ai-connector' ),
+				esc_html__( 'A chave API e gerenciada em %1$sConfiguracoes > Conectores%2$s. Escolha aqui qual modelo Groq o WordPress usara por padrao.', 'groq-ai-connector' ),
 				'<a href="' . esc_url( $connectors_url ) . '">',
 				'</a>'
 			); ?></p>
@@ -94,7 +94,7 @@ class GroqSettings {
 					<tr>
 						<th scope="row">
 							<label for="<?php echo esc_attr( self::OPTION_MODEL ); ?>">
-								<?php esc_html_e( 'Modelo padrao', 'wp-groq-ai-connector' ); ?>
+								<?php esc_html_e( 'Modelo padrao', 'groq-ai-connector' ); ?>
 							</label>
 						</th>
 						<td>
@@ -111,14 +111,14 @@ class GroqSettings {
 								<?php
 								// translators: %s: link to Groq models documentation.
 								printf(
-									esc_html__( 'Veja todos os modelos em %s.', 'wp-groq-ai-connector' ),
+									esc_html__( 'Veja todos os modelos em %s.', 'groq-ai-connector' ),
 									'<a href="https://console.groq.com/docs/models" target="_blank" rel="noopener">console.groq.com/docs/models</a>'
 								); ?>
 							</p>
 						</td>
 					</tr>
 				</table>
-				<?php submit_button( __( 'Salvar modelo', 'wp-groq-ai-connector' ) ); ?>
+				<?php submit_button( __( 'Salvar modelo', 'groq-ai-connector' ) ); ?>
 			</form>
 		</div>
 		<?php
