@@ -7,7 +7,7 @@
  * Author:      Samuel Costa
  * Author URI:  https://samuel-costa.com
  * License:     GPLv2 or later
- * Text Domain: wp-groq-ai-connector
+ * Text Domain: groq-ai-connector
  * Requires at least: 7.0
  * Requires PHP: 8.1
  * Requires Plugins: ai
