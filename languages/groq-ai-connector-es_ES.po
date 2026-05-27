@@ -1,0 +1,72 @@
+# Spanish (Spain) translation for Groq AI Connector
+# Copyright (C) 2026 Samuel Costa
+# This file is distributed under the same license as the Groq AI Connector plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Groq AI Connector 0.2.1\n"
+"Report-Msgid-Bugs-To: https://github.com/samuelmanzini/groq-ai-connector\n"
+"POT-Creation-Date: 2026-05-27T00:00:00+00:00\n"
+"PO-Revision-Date: 2026-05-27T00:00:00+00:00\n"
+"Last-Translator: Samuel Costa <contato@samuel-costa.com>\n"
+"Language-Team: Spanish (Spain) <es@li.org>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: groq-ai-connector.php
+#, php-format
+msgid "Groq AI Connector requires WordPress %1$s or higher. You are running %2$s."
+msgstr "Groq AI Connector requiere WordPress %1$s o superior. Est\303\241s usando %2$s."
+
+#: groq-ai-connector.php
+msgid "Groq AI Connector requires the WordPress AI plugin (ai) to be active."
+msgstr "Groq AI Connector requiere que el plugin de IA de WordPress (ai) est\303\251 activo."
+
+#: src/Provider/GroqProvider.php
+msgid "Groq"
+msgstr "Groq"
+
+#: src/Provider/GroqProvider.php
+msgid "Ultra-fast AI inference with Groq LPU."
+msgstr "Inferencia de IA ultrarr\303\241pida con Groq LPU."
+
+#: src/Plugin.php
+msgid "Ultra-fast AI inference with Groq LPU. Run Llama, Mixtral, Gemma and more."
+msgstr "Inferencia de IA ultrarr\303\241pida con Groq LPU. Ejecuta Llama, Mixtral, Gemma y m\303\241s."
+
+#: src/Settings/GroqSettings.php
+msgid "Groq AI"
+msgstr "Groq AI"
+
+#: src/Settings/GroqSettings.php
+msgid "Groq AI \342\200\224 Modelo padr\303\243o"
+msgstr "Groq AI \342\200\224 Modelo predeterminado"
+
+#: src/Settings/GroqSettings.php
+#, php-format
+msgid "Chave API nao encontrada. Insira sua Groq API Key em %1$sConfiguracoes > Conectores%2$s."
+msgstr "Clave API no encontrada. Ingresa tu Groq API Key en %1$sAjustes > Conectores%2$s."
+
+#: src/Settings/GroqSettings.php
+msgid "Groq API Key configurada."
+msgstr "Groq API Key configurada."
+
+#: src/Settings/GroqSettings.php
+#, php-format
+msgid "A chave API e gerenciada em %1$sConfiguracoes > Conectores%2$s. Escolha aqui qual modelo Groq o WordPress usara por padrao."
+msgstr "La clave API se gestiona en %1$sAjustes > Conectores%2$s. Elige aqu\303\255 qu\303\251 modelo Groq usar\303\241 WordPress de forma predeterminada."
+
+#: src/Settings/GroqSettings.php
+msgid "Modelo padrao"
+msgstr "Modelo predeterminado"
+
+#: src/Settings/GroqSettings.php
+#, php-format
+msgid "Veja todos os modelos em %s."
+msgstr "Ver todos los modelos en %s."
+
+#: src/Settings/GroqSettings.php
+msgid "Salvar modelo"
+msgstr "Guardar modelo"

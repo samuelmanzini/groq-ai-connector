@@ -12,11 +12,20 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 class Plugin {
 
 	public function init(): void {
+		add_action( 'plugins_loaded', [ $this, 'load_textdomain' ] );
 		add_action( 'init', [ $this, 'register_provider' ], 5 );
 		add_action( 'init', [ $this, 'register_auth' ], 15 );
 		add_action( 'wp_connectors_init', [ $this, 'register_connector' ] );
 		add_filter( 'wpai_preferred_text_models', [ $this, 'prepend_preferred_models' ] );
 		( new Settings\GroqSettings() )->init();
+	}
+
+	public function load_textdomain(): void {
+		load_plugin_textdomain(
+			'groq-ai-connector',
+			false,
+			dirname( plugin_basename( GROQ_CONNECTOR_FILE ) ) . '/languages'
+		);
 	}
 
 	public function register_provider(): void {
